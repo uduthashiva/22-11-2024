@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<center><h1>FORGET PASSWORD</h1></center>
+<form action="./passwordset.html" method="get">
+    <table border="1" cellspacing="22" cell pading="5">
+        <tr>
+            <td>
+                <label for="usre name">user name</label>
+                <input type="text" name="username" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[!@#$%^&*]).{8,16}"required minlength="8" maxlength="16" title="minimam 8 chartersts">
+            </td>
+        </tr>
+            <tr>
+                <td>
+                    <label for="otp" >otp</label>
+                    <input type="text"pattern="123456" required title="your otp is 123456">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    
+                <center><input type="submit" value="new page"></center>
+                </td>
+            </tr>
+       
+    </table>
+
+</form>
+
+</body>
+</html>
